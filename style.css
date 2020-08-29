@@ -1,0 +1,115 @@
+.container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container2 {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    bottom: 540px;
+    z-index: 99;
+}
+
+section {
+    padding: 5px;
+    padding-left: 20px;
+    width: 200px;
+    height: 90px;
+    background: white;
+}
+
+#one {
+    border: transparent;
+    border-radius: 5px 0px 0px 5px;
+}
+
+#four {
+    border: transparent;
+    border-radius: 0px 5px 5px 0px;
+}
+
+body, html, header {
+    margin: 0;
+}
+
+header {
+ background-image: url(./images/pattern-bg.png);
+ margin-top: -21px;
+ height: 200px;
+ width: 100%;
+}
+
+html, input {
+    font-family: "Rubik", sans-serif;
+}
+
+h1 {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+
+}
+input {
+    height: 30px;
+    border-radius: 5px 0px 0px 5px;
+    width: 260px;
+}
+
+input, button {
+    border: transparent;
+}
+
+button {
+    color: white;
+    background-color: black;
+    height: 32px;
+    width: 30px;
+    margin-left: -5px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+h5 {
+    color: hsl(0, 0%, 59%) ;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 8px;
+    letter-spacing: 1.5px;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 500;
+    word-wrap: break-word;
+    color: hsl(0, 0%, 17%);
+}
+
+#mapid { 
+    height: 480px;
+    /* margin-top: -120px;  */
+    z-index: 0;
+}
+
+@media screen and (max-width: 600px) {
+    section {
+        height: 50px;
+        text-align: center;
+    }
+    #one {
+        border: transparent;
+        border-radius: 5px 5px 0px 0px;
+    }
+    
+    #four {
+        border: transparent;
+        border-radius: 0px 0px 0px 5px;
+    }
+    #isp {
+
+    }
+  }

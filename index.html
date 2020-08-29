@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | IP Address Tracker</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin=""/>
+
+  <link rel="stylesheet" href="style.css"
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -16,18 +19,44 @@
 </head>
 <body>
 
-  IP Address Tracker
+  <header>
+    <h1>IP Address Tracker</h1>
+    <div class="container1">
+      <div>
+        <input autofocus placeholder="  Search for any IP address or domain"/>
+        <button><img width="5px" height="8px" src="./images/icon-arrow.svg" alt=""></button>
+      </div>
+    </div>
+  </header>
+  <div id="mapid"></div>
+  <div class="container2">
+    <section id="one">
+     <h5>IP Address</h5>
+     <p id="ip"></p>
+    </section>
+    <section>
+      <h5>Location</h5>
+      <p id="location"></p>
+     </section>
+     <section>
+      <h5>Timezone</h5>
+      <p id="timezone"></p>
+     </section>
+     <section id="four">
+      <h5>ISP</h5>
+      <p id="isp"></p>
+     </section>
+  </div>
 
-  Search for any IP address or domain
 
-  IP Address
-  Location
-  Timezone
-  ISP
-  
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+crossorigin=""></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./script.js"></script>
 </html>
