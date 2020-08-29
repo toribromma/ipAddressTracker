@@ -25,7 +25,7 @@ var getMapData = function(lat, lon) {
 }
 
 var getIP = function(ipOrDomain) {
-    var queryURL = "http://ip-api.com/json/" + ipOrDomain;
+    var queryURL = "https://ip-api.com/json/" + ipOrDomain;
       $.ajax({
         url: queryURL,
         method: "GET"
