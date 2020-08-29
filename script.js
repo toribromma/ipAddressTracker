@@ -14,7 +14,7 @@ var getMapData = function(lat, lon) {
     id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1,
-    accessToken: 'pk.eyJ1IjoidG9yaWJyb21tYSIsImEiOiJja2VmN3YybXowajE2MnVqeXY0cW9kY2QxIn0.VWsH7G0rNA3AvLwwUcraPQ'
+    accessToken: 'pk.eyJ1IjoidG9yaWJyb21tYSIsImEiOiJja2VmOW1maHEwOXE3MnlxcjIxNTk5bWt0In0.ARNvcAkPWMShH82YOFoCXQ'
 }).addTo(mymap);
     var circle = L.circle([lat, lon], {
         color: 'red',
