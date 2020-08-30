@@ -90,15 +90,15 @@ p {
 }
 
 #mapid { 
-    height: 480px;
-    /* margin-top: -120px;  */
-    z-index: 0;
+    height: 500px;
 }
 
 @media screen and (max-width: 600px) {
     section {
         height: 50px;
         text-align: center;
+        padding: 10px;
+
     }
     #one {
         border: transparent;
@@ -109,7 +109,5 @@ p {
         border: transparent;
         border-radius: 0px 0px 0px 5px;
     }
-    #isp {
-
-    }
+    
   }
